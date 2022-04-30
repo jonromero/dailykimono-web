@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Tag Manager -->
+    <!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Kimono App: You already know Greek!</title>
+    <link rel="shortcut icon" href="/static/imgs/favicon.ico">
+
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <meta property="og:image" content="https://getkimono.app/static/imgs/shareme.png" />
+
+    <meta name="twitter:card" content="photo" />
+    <meta name="twitter:title" content="$✌️" />
+    <meta name="twitter:description" content="Daily Kimono: You already know Greek!" />
+    <meta name="twitter:image" content="https://getkimono.app/static/imgs/shareme.png" />
+    <meta name="twitter:url" content="https://getkimono.app/" />
+
+    <script defer src="/static/js/alpinejs.min.js"></script>
+    <script src="/static/js/main.js"></script>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- main -->
+    <div class="relative bg-white overflow-hidden">
+        <div class="hidden lg:block lg:absolute lg:inset-0" aria-hidden="true">
+            <svg class="absolute top-0 left-1/2 transform translate-x-64 -translate-y-8" width="640" height="784"
+                fill="none" viewBox="0 0 640 784">
+                <defs>
+                    <pattern id="9ebea6f4-a1f5-4d96-8c4e-4c2abf658047" x="118" y="0" width="20" height="20"
+                        patternUnits="userSpaceOnUse">
+                        <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                    </pattern>
+                </defs>
+                <rect y="72" width="640" height="640" class="text-gray-50" fill="currentColor" />
+                <rect x="118" width="404" height="784" fill="url(#9ebea6f4-a1f5-4d96-8c4e-4c2abf658047)" />
+            </svg>
+        </div>
+
+        <div class="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
+            <nav class="relative max-w-7xl mx-auto px-4 sm:px-6" aria-label="Global">
+                <div class="">
+                    <div class="">
+                        <a href="#" class="font-extrabold text-blue-500 hover:text-blue-300">Daily Kimono 👘 </a>
+                    </div>
+                </div>
+            </nav>
+
+
+            <main class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-32">
+                <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+                    <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+                        <h1>
+                            <span
+                                class="mt-1 block pb-8 text-3xl tracking-tight font-extrabold sm:text-4xl xl:text-4xl">
+                                <span class="block text-3xl text-indigo-500">
+                                    <span class="block text-gray-800">You already know Greek.</span>
+                                </span>
+                            </span>
+                        </h1>
+                        <div x-data='text_rotation()' x-init='rotate_words()' class="block xl:inline">
+                            <span x-text='animated_text' class='bg-blue-400 p-2 text-gray-100 text-5xl'></span>
+                        </div>
+                        <p class="mt-3 pt-4 text-base text-gray-800 sm:mt-5">Unlock the
+                            Greek words that you already know but you had no
+                            idea were actually Greek.
+                            Each day a new word with Greek roots straight to your phone!
+                        </p>
+                        <div class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
+                            <p class="text-base font-medium text-gray-900">Sign up to get the invite.</p>
+                            <form action="#" method="POST" class="mt-3 sm:flex">
+                                <label for="email" class="sr-only">Email</label>
+                                <input type="email" name="email" id="email"
+                                    class="block w-full py-3 text-base rounded-md placeholder-gray-500 shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:flex-1 border-gray-300"
+                                    placeholder="Enter your email">
+                                <button type="submit"
+                                    class="mt-3 w-full px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 shadow-sm hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:ml-3 sm:flex-shrink-0 sm:inline-flex sm:items-center sm:w-auto">Make
+                                    me
+                                    Greek</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div
+                        class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+                        <svg class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-8 scale-75 origin-top sm:scale-100 lg:hidden"
+                            width="640" height="784" fill="none" viewBox="0 0 640 784" aria-hidden="true">
+                            <defs>
+                                <pattern id="4f4f415c-a0e9-44c2-9601-6ded5a34a13e" x="118" y="0" width="20" height="20"
+                                    patternUnits="userSpaceOnUse">
+                                    <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                                </pattern>
+                            </defs>
+                            <rect y="72" width="640" height="640" class="text-gray-50" fill="currentColor" />
+                            <rect x="118" width="404" height="784" fill="url(#4f4f415c-a0e9-44c2-9601-6ded5a34a13e)" />
+                        </svg>
+                        <div class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
+                            <button type="button"
+                                class="relative block w-full bg-white rounded-lg overflow-hidden focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                <span class="sr-only">Watch our video to learn more</span>
+                                <img class="w-full"
+                                    src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                                    alt="">
+                                <div class="absolute inset-0 w-full h-full flex items-center justify-center"
+                                    aria-hidden="true">
+                                    <svg class="h-20 w-20 text-indigo-500" fill="currentColor" viewBox="0 0 84 84">
+                                        <circle opacity="0.9" cx="42" cy="42" r="42" fill="white" />
+                                        <path
+                                            d="M55.5039 40.3359L37.1094 28.0729C35.7803 27.1869 34 28.1396 34 29.737V54.263C34 55.8604 35.7803 56.8131 37.1094 55.9271L55.5038 43.6641C56.6913 42.8725 56.6913 41.1275 55.5039 40.3359Z" />
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- main end -->
+
+    <!-- FOOTER -->
+    <div class="bg-gray-50">
+        <div class="max-w-screen-xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-2">
+            <div class="mt-8 flex justify-center">
+                <a href="https://www.instagram.com/daily_kimono/" class="ml-6 text-gray-400 hover:text-gray-500">
+                    <span class="sr-only">Instagram</span>
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- END FOOTER -->
+
+</body>
+
+</html>
